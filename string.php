@@ -6,15 +6,15 @@ echo "<p>$str last char is <strong>".$str[strlen($str)-1]."</strong></p>";
 
 // modify last character
 $str[strlen($str)-1] = "?";
-echo $str;
+echo "<p>$str</p>";
 
 // reverse words
-echo strrev($str)."<br>";
+echo "<p>".strrev($str)."</p>";
 
 // search text inside string
-echo strpos($str,"string")."<br>";
+echo "<p>".strpos($str,"string")."</p>";
 
 // replace text inside string
-echo str_replace("string", "new string", $str);
+echo "<p>".str_replace("string", "new string", $str)."</p>"; // (replaceValue,newValue, stringToImplementReplace)
 
 ?>
